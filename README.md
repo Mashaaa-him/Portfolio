@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# python-project
+
 # Portfolio
 =======
 # React + Vite
