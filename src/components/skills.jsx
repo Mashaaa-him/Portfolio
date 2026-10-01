@@ -17,3 +17,5 @@ function Skills() {
         </section>
     )
 }
+
+export default Skills
