@@ -54,3 +54,19 @@
 .contact-link:hover {
     background: #f5f5f5;
 }
+
+.navbar {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar a.active {
+    font-weight: bold;
+    border-bottom: 2px solid currentColor;
+}
