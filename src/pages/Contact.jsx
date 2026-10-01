@@ -8,14 +8,15 @@ function Contact() {
 
             <div className="contact-links">
                 {contacts.map(({ label, href, icon: Icon}) => (
-
-                    key={label},
-                    href={href},
-                    target={href.startsWith('mailto:') ? undefined : '_blank'},
-                    rel={href.starsWith('mailto:') ? undefined : 'noreferrer'},
+                    <a
+                    key={label}
+                    href={href}
+                    target={href.startsWith('mailto:') ? undefined : '_blank'}
+                    rel={href.starsWith('mailto:') ? undefined : 'noreferrer'}
                     className="contact-link"
                     >
                     <><Icon size={20} /><span>{label}</span></>
+                    </a>
                 ))}
             </div>
         </section>
