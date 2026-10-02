@@ -1,12 +1,14 @@
 import { NavLink } from "react-router-dom";
  
 function Navbar() {
+    return (
     <nav className="navbar">
-        <navlink to="/" end>Home</navlink>
-        <navlink to="/about">About</navlink>
-        <navlink to="/Skills">Skills</navlink>
-        <navlink to="/contact">Contact</navlink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/skills">Skills</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
     </nav>
+    )
 }
  
 export default Navbar

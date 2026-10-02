@@ -15,10 +15,11 @@ function Footer() {
                     <Icon size={20} />
                 </a>
                 ))}
+            </div>
                 <p className="footer-text">
                   © {new Date().getFullYear()} Allan Macharia. Built with React. And a whole lot of Redbulls.    
                 </p>
-            </div>
+            
         </footer>
     )
 }

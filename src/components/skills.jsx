@@ -3,7 +3,7 @@ import { skills } from "../data/skills"
 function Skills() {
     return (
         <section className="page skills">
-            <h1>SKills</h1>
+            <h1>Skills</h1>
             {skills.map((group) => (
                 <div key={group.category} className="skill-group">
                     <h2>{group.category}</h2>

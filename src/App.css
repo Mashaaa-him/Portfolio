@@ -38,6 +38,14 @@
     color: #777;
 }
 
+.footer-link svg {
+    color: #fff;
+}
+
+.footer-link:hover svg {
+    color: #fff;
+}
+
 /* Contact Page*/
 .contact-links {
     display: flex;
@@ -69,4 +77,63 @@
 .navbar a.active {
     font-weight: bold;
     border-bottom: 2px solid currentColor;
+}
+
+/* pages styling*/
+
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.page h1 {
+  margin-bottom: 1.5rem;
+}
+
+.about p {
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  color: #ccc;
+}
+
+.about u {
+  text-decoration-color: #8b5cf6;
+}
+
+.about strong {
+  color: #fff;
+}
+
+.skill-group {
+  margin-bottom: 2rem;
+}
+
+.skill-group h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list li {
+  background: #1e1e2e;
+  border: 1px solid #333;
+  color: #ddd;
+  border-radius: 999px;
+  padding: 0.35rem 1rem;
+  font-size: 0.9rem;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.skill-list li:hover {
+  border-color: #8b5cf6;
+  color: #fff;
 }
