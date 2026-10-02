@@ -51,6 +51,7 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   margin: 0;
 }
 
@@ -68,8 +69,8 @@ body {
 
 h1,
 h2 {
-  font-family: var(--heading);
-  font-weight: 500;
+  font-family:'Fraunces', serif;
+  font-weight: 600;
   color: var(--text-h);
 }
 

@@ -11,8 +11,14 @@
     width: 100%;
     max-width: 350px;
     height: auto;
-    border-radius: 55%;
+    border-radius: 0%;
     border: 3px solid #ddd;
+}
+
+.hero h1{
+    border: #ccc;
+    appearance: none;
+    padding: 10px;
 }
 /* footer */
 .footer {
@@ -51,11 +57,8 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 0.75rem;
-    border:  1px solid #ddd;
-    border-radius: 10px;
-    text-decoration: none;
-    color: inherit;
+    padding: 0.5rem;
+   
     transition: background 0,5s ease;
 }
 
@@ -84,7 +87,7 @@
 .page {
   max-width: 700px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 4rem 1.5rem;
 }
 
 .page h1 {
@@ -92,9 +95,16 @@
 }
 
 .about p {
-  line-height: 1.7;
-  margin-bottom: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
   color: #ccc;
+}
+
+.AboutPage {
+    background-image: url("assets/Him.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .about u {
@@ -136,4 +146,18 @@
 .skill-list li:hover {
   border-color: #8b5cf6;
   color: #fff;
+}
+
+.project-card, .contact-link, .skill-list li {
+  border-radius: 16px; 
+}
+
+.project-card {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.15);
 }

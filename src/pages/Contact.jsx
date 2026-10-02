@@ -3,8 +3,8 @@ import { contacts } from "../data/contacts";
 function Contact() {
     return (
         <section className="page contact">
-            <h1>Get in touch with me.</h1>
-            <p>Feel free to send a 'Hey' through any of these. It would be lovely to hear from you.</p>
+            <h1>Woza</h1>
+            <p>I'm always up for talking tech, writing, guitar, swimming, and everything in between. Feel free to shoot a text through:</p>
 
             <div className="contact-links">
                 {contacts.map(({ label, href, icon: Icon}) => (
