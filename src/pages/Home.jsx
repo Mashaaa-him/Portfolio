@@ -1,21 +1,18 @@
-import Hero from "../components/Hero";
-import ProjectCard from "../components/ProjectCard";
-import { projects } from "../data/project";
+
 
 function Home(){
     return (
-        <div>
-            <Hero />
-            <section>
-                <h2>Projects</h2>
-                <div className="project-grid">
-                    {projects.map((project) => (
-                        <ProjectCard key={project.id} {...project} />
-                    ))}
-
-                </div>
-            </section>
-        </div>
+         <section className="welcome">
+            <p className="welcome-eyebrow">macharia.dev</p>
+           <p className="welcome-line">hey, I'm Macharia. welcome to my corner of this vast internet</p> 
+           <p className="welcome-quote">"There's only ten good men left on this earth, and it's just me and my homies."- Gandhi</p>
+          <div className="welcome-links">
+            <a href="/about">more about me</a>
+            <br />
+            <a href="/contact">sema khaiiii</a>
+          </div>
+          </section>     
+        
     )
 }
 

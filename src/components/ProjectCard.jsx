@@ -1,4 +1,4 @@
-function ProjectCard({title, description, tech, liveUrl, repoUrl}){
+function ProjectCard({title, description, tech,  repoUrl}){
     return (
         <article className="project-card">
             <h3>{title}</h3>
@@ -11,7 +11,7 @@ function ProjectCard({title, description, tech, liveUrl, repoUrl}){
             </ul>
 
             <div className="project-links">
-                <a href="{liveUrl}" target="_blank" rel="nreferrer">Live Demo</a>
+                
                 <a href="{repoUrl}" target="_blank" rel="noreferrer">Code</a>
             </div>
         </article>

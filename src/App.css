@@ -161,3 +161,54 @@
   transform: translateY(-4px);
   box-shadow: 0 8px 30px rgba(139, 92, 246, 0.15);
 }
+
+.welcome {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.welcome-eyebrow{
+    font-size: 0.85;
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    color: #8b5cf6;
+    margin-bottom: 1.5rem;
+}
+.welcome-line {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.welcome-quote {
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+.welcome-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.welcome-links a{
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color o.15s ease-in-out;
+}
+
+.welcome-links a:hover{
+    color: #8b5cf6;
+}
+
+
