@@ -53,17 +53,19 @@
 }
 
 /* Contact Page*/
-.contact-links {
-    display: flex;
+.contact-link {
+    display: inline-flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 0.5rem;
-   
-    transition: background 0,5s ease;
+    gap: 0.5rem;
+    border-radius: 999px;
+    padding: 0.4rem 0.9rem;
+    color: inherit;
+    align-items: center;
+    transition: background 0.2s ease;
 }
 
 .contact-link:hover {
-    background: #f5f5f5;
+    background: #8b5cf6;
 }
 
 .navbar {
@@ -94,18 +96,13 @@
   margin-bottom: 1.5rem;
 }
 
+
 .about p {
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: #ccc;
 }
 
-.AboutPage {
-    background-image: url("assets/Him.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
 .about u {
   text-decoration-color: #8b5cf6;
@@ -113,6 +110,47 @@
 
 .about strong {
   color: #fff;
+}
+
+.about-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.about-img {
+    width: 240px;
+    flex-shrink: 10;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3 );
+}
+
+.about-text p {
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+    color: #ccc;
+}
+
+@media (max-width: 640px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-img {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+.about-nudge {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #2e303a;
+    color: #888;
+    font-style: italic;
+    font-size: 0.95rem;
 }
 
 .skill-group {
@@ -185,12 +223,12 @@
     font-size: 1.4rem;
     line-height: 1.5;
     color: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: 3.5rem;
 }
 
 .welcome-quote {
     font-style: italic;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.25rem;
     color: #888;
     font-size: 0.95rem;
 }
@@ -198,6 +236,7 @@
 .welcome-links{
     display: flex;
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .welcome-links a{
@@ -211,4 +250,9 @@
     color: #8b5cf6;
 }
 
-
+.welcome-attribution {
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    color: #888;
+    font-size: 0.95rem;
+}
