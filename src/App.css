@@ -96,6 +96,9 @@
   margin-bottom: 1.5rem;
 }
 
+.page.about {
+    max-width: 960px;
+}
 
 .about p {
   line-height: 1.8;
@@ -113,33 +116,54 @@
 }
 
 .about-content {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:grid;
+    gap: 3rem;
+    grid-template-columns: 260px 1fr;
+    align-items: start;
 }
 
 .about-img {
-    width: 240px;
-    flex-shrink: 10;
-    border-radius: 12px;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    border-radius: 16px;
     object-fit: cover;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3 );
+    top: 2rem;
+    position: sticky;
+}
+
+.about-text {
+    text-align: left;
+    max-width: 62ch;
 }
 
 .about-text p {
-    line-height: 1.7;
+    font-size: 1.05rem;
+    line-height: 1.8;
     margin-bottom: 1.25rem;
-    color: #ccc;
+    color: #c4c7cf;
 }
 
-@media (max-width: 640px) {
+.about-text p:first-child {
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.about-text a {
+    color: #a78bfa;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 800px) {
     .about-content {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
     .about-img {
-        width: 100%;
-        max-width: 200px;
+        position: static;
+        max-width: 280px;
+        margin: 0 auto;
     }
 }
 
@@ -218,15 +242,18 @@
     text-transform: lowercase;
     color: #8b5cf6;
     margin-bottom: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .welcome-line {
     font-size: 1.4rem;
     line-height: 1.5;
     color: #fff;
     margin-bottom: 3.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .welcome-quote {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     margin-bottom: 0.25rem;
     color: #888;
@@ -240,6 +267,7 @@
 }
 
 .welcome-links a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ccc;
     text-decoration: none;
     font-size: 0.95rem;
@@ -255,4 +283,38 @@
     margin-bottom: 2.5rem;
     color: #888;
     font-size: 0.95rem;
+}
+
+.about-quote {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2.3rem 0;
+    padding-left: 1.25rem;
+    border-left: 3px solid #8b5cf6;
+    font-style: italic;
+    color: #aaa;
+    text-align: left;
+}
+
+.currently {
+    margin-top: 2.5rem;
+    text-align: left;
+}
+
+.currently-list {
+    list-style: none;
+    padding: o;
+    margin: 0.75rem 0 0;
+}
+
+.currently-list li {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #2e303a;
+    color: #ccc;
+}
+
+.currently-label {
+    min-width: 7rem;
+    color: #8b5cf6;
 }

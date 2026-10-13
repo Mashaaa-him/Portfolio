@@ -1,3 +1,4 @@
+import Currently from './Currently'
 import aboutImg from '../assets/Him.jpg'
 function About() {
   return (
@@ -6,18 +7,27 @@ function About() {
         <img src={aboutImg} alt='Macharia' className='about-img' />
 
         <div className='about-text'>
-          <p>Macharia is a student at Kabarak University pursuing his degree in Computer Science.</p>
+          <p>Macharia is a Computer Science student at Kabarak University who genuinely believes that a well-placed semicolon can fix almost anything. (Almost)</p>
           <p>
-            He is a tech enthusiast who finds peace in solving problems using dynamic technical solutions.
-            He has taken part in a number of <u>projects</u> including the <i>Event and Ticketing System</i>, which he, together with a group of friends,
-            made as their team project.
+           He's the kind of enthusiast who doesn't just use technology; he takes it apart, figures out why it works and then builds something better with it.
+           Case in point: he and a few equally brilliant friends teamed up to build an Event Management and Ticketing System. It works. It's sleek. And yes, they're still on speaking terms.
           </p>
           <p>
-            Apart from being tech-savvy, Macharia is also a writer who likes sharing his thoughts
-            and opinions on various topics in life. He currently does technical writing at the <strong>Google Developers Group On Campus Kabarak</strong>, where he showcases his mild obsession in writing.
+            When he's not buried in code, Macharia is buried in words-voluntarily this time. He's a writer at heart, sharing his thoughts on life, tech and everything in between. 
+            You'll find his musings over at <a href='https://substack.com/@1mashaa'>his Substack,</a> where he indulges his slight obsession with putting ideas on paper.
+          </p>
+          <p>
+            And when he needs a break from both screens and syntax? You'll find him in the water. Swimming is his reset button; a few laps, a clear head and he's ready to debug life again.
+          </p>
+          <p>
+            Part engineer, part storyteller, part fish- fully caffeinated. That's Macharia.
           </p>
         </div>
       </div>
+      <blockquote className='about-quote'>
+          "When life gives you lemons, cry and ask why"
+      </blockquote>
+      <Currently />
       <p className='about-nudge'>Want to chat? Slide down to find my contact details- I reply.</p>
     </section>
   )
