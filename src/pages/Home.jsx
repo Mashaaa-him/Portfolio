@@ -8,9 +8,9 @@ function Home(){
            <p className="welcome-quote">"There's only ten good men left on this earth, and it's just me and my homies."</p>
            <p className="welcome-attribution">-Gandhi</p>
           <div className="welcome-links">
-            <a href="/about">more about me</a>
+            <a href="/about">Who is Macharia?</a>
             <br />
-            <a href="mailto:macharianjombou@gmail.com">sema khaiiii</a>
+            <a href="mailto:macharianjombou@gmail.com">Send me an email</a>
           </div>
           </section>     
         

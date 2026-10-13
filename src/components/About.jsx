@@ -14,11 +14,11 @@ function About() {
           </p>
           <p>
             Apart from being tech-savvy, Macharia is also a writer who likes sharing his thoughts
-            and opinions on various topics in life. He currently does technical writing at the <strong>Google Developers Group On Campus Kabarak</strong>, where he showcases his mild obsession with writing.
+            and opinions on various topics in life. He currently does technical writing at the <strong>Google Developers Group On Campus Kabarak</strong>, where he showcases his mild obsession in writing.
           </p>
         </div>
       </div>
-      <p className='about-nudge'>Want to chat? Slide down, or just email me - I reply.</p>
+      <p className='about-nudge'>Want to chat? Slide down to find my contact details- I reply.</p>
     </section>
   )
 }
