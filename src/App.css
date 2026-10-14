@@ -170,13 +170,13 @@
 }
 
 .welcome {
-    min-height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: center;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 4rem auto;
     padding: 0 1.5rem;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -201,27 +201,31 @@
 .welcome-quote {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
     color: #888;
     font-size: 0.95rem;
 }
 
-.welcome-links{
-    display: flex;
-    gap: rem;
-    margin-top: 0rem;
+.welcome-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.75rem;
+  align-items: flex-start;
+  margin-top: 0.5rem;
 }
 
-.welcome-links a{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ccc;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color o.15s ease-in-out;
+.welcome-links a {
+  color: #c4c7cf;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #2e303a;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.welcome-links a:hover{
-    color: #8b5cf6;
+.welcome-links a:hover {
+  color: #a78bfa;
+  border-color: #8b5cf6;
 }
 
 .welcome-attribution {
@@ -231,7 +235,32 @@
     font-size: 0.95rem;
 }
 
+.welcome .currently {
+  margin: 2rem 0 0;
+  padding: 0;
+  border-top: none;
+  text-align: center;
+}
 
+.welcome .currently h2 {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b5cf6;
+}
+
+.welcome .currently-list li {
+  display: block;
+  padding: 0.15rem 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.welcome .currently-label {
+  margin-right: 0.4rem;
+  color: #888;
+}
 
 .page.about {
   max-width: 960px;
