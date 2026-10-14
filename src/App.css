@@ -96,9 +96,7 @@
   margin-bottom: 1.5rem;
 }
 
-.page.about {
-    max-width: 960px;
-}
+
 
 .about p {
   line-height: 1.8;
@@ -123,50 +121,6 @@
     align-items: start;
 }
 
-.about-img {
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    border-radius: 16px;
-    object-fit: cover;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3 );
-    top: 2rem;
-    position: sticky;
-}
-
-.about-text {
-    text-align: left;
-    max-width: 62ch;
-}
-
-.about-text p {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    margin-bottom: 1.25rem;
-    color: #c4c7cf;
-}
-
-.about-text p:first-child {
-    font-size: 1.25rem;
-    color: #fff;
-}
-
-.about-text a {
-    color: #a78bfa;
-    text-underline-offset: 3px;
-}
-
-@media (max-width: 800px) {
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    .about-img {
-        position: static;
-        max-width: 280px;
-        margin: 0 auto;
-    }
-}
-
 .about-nudge {
     text-align: center;
     margin-top: 2.5rem;
@@ -176,6 +130,8 @@
     font-style: italic;
     font-size: 0.95rem;
 }
+
+
 
 .skill-group {
   margin-bottom: 2rem;
@@ -208,20 +164,6 @@
 .skill-list li:hover {
   border-color: #8b5cf6;
   color: #fff;
-}
-
-.project-card, .contact-link, .skill-list li {
-  border-radius: 16px; 
-}
-
-.project-card {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.15);
 }
 
 .welcome {
@@ -285,36 +227,121 @@
     font-size: 0.95rem;
 }
 
-.about-quote {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 2.3rem 0;
-    padding-left: 1.25rem;
-    border-left: 3px solid #8b5cf6;
-    font-style: italic;
-    color: #aaa;
-    text-align: left;
+
+
+.page.about {
+  max-width: 960px;
 }
 
+.about-content {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Photo + "right now" travel together */
+.about-aside {
+  position: sticky;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.about-figure {
+  margin: 0;
+}
+
+.about-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-figure figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #888;
+  text-align: center;
+}
+
+/* "Right now" list */
 .currently {
-    margin-top: 2.5rem;
-    text-align: left;
+  margin: 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid #2e303a;
+  text-align: left;
+}
+
+.currently h2 {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b5cf6;
 }
 
 .currently-list {
-    list-style: none;
-    padding: o;
-    margin: 0.75rem 0 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .currently-list li {
-    display: flex;
-    gap: 1rem;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #2e303a;
-    color: #ccc;
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.5rem;
+  padding: 0.35rem 0;
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
 .currently-label {
-    min-width: 7rem;
-    color: #8b5cf6;
+  color: #888;
+}
+
+/* Bio text */
+.about-text {
+  text-align: left;
+  max-width: 62ch;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #c4c7cf;
+}
+
+.about-text a {
+  color: #a78bfa;
+  text-underline-offset: 3px;
+}
+
+.about-signoff {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #2e303a;
+  font-style: italic;
+  color: #fff !important;
+}
+
+/* Phones and narrow windows: stack, and stop sticking */
+@media (max-width: 800px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-aside {
+    position: static;
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
