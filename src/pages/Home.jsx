@@ -1,7 +1,8 @@
-
+import Currently from '../components/Currently'
 
 function Home() {
   return (
+   <>
     <section className="welcome">
       <p className="welcome-eyebrow">macharia.dev</p>
       <p className="welcome-line">hey, I'm Macharia. welcome to my corner of the internet</p>
@@ -13,6 +14,10 @@ function Home() {
       </div>
     </section>
 
+    <div className='home-currently'>
+    <Currently />
+    </div>
+</> 
   )
 }
 

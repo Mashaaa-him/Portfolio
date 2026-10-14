@@ -1,4 +1,3 @@
-import Currently from './Currently'
 import aboutImg from '../assets/mash.jpeg'
 function About() {
   return (
@@ -9,7 +8,7 @@ function About() {
             <img src={aboutImg} alt="Macharia, making business calls" className='about-img' />
             <figcaption>exhibit A:</figcaption>
           </figure>
-          <Currently />
+
         </aside>
         <div className='about-text'>
           <p>Macharia is a Computer Science student at Kabarak University who genuinely believes that a well-placed semicolon can fix almost anything. (Almost)</p>

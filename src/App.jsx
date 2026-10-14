@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import SkillsPage from './components/skills'
 import About from './pages/About'
+import Persona from './pages/Persona'
 
 function AppContent() {
   const location = useLocation()
@@ -16,6 +17,7 @@ function AppContent() {
         <Route path="/" element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/skills' element={<SkillsPage />} />
+        <Route path='/persona' element={<Persona />}/>
       </Routes>
       <Footer />
     </>
