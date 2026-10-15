@@ -472,3 +472,58 @@
 .persona .on-repeat {
   margin-top: 2rem;
 }
+
+.writing {
+  margin-top: 3.5rem;
+  text-align: left;
+}
+
+.writing h2 {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b5cf6;
+}
+
+.writing-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.post {
+  display: block;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid #2e303a;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.post:hover {
+  border-color: #8b5cf6;
+  transform: translateY(-2px);
+}
+
+.post-title {
+  display: block;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.post-teaser {
+  display: block;
+  margin: 0.35rem 0 0.75rem;
+  color: #c4c7cf;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.post-cta {
+  color: #a78bfa;
+  font-size: 0.85rem;
+}
