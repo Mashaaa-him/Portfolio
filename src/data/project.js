@@ -9,8 +9,8 @@ export const projects = [
   },
    {
     id: 2,
-    title: 'Coming Soon',
-    description: 'Something new is brewing. Check back soon for the details.',
+    title: 'Coming Soon: API Playground',
+    description: 'A small Express API to practise routing and validation.',
     tech: ['React', 'Node.js'],
     liveUrl: '#',
     repoUrl: '#',
