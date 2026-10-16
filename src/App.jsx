@@ -6,6 +6,7 @@ import SkillsPage from './components/skills'
 import About from './pages/About'
 import Persona from './pages/Persona'
 import Projects from './pages/Projects'
+import ThemeToggle from './components/ThemeToggle'
 
 function AppContent() {
   const location = useLocation()
@@ -13,6 +14,7 @@ function AppContent() {
 
   return (
     <>
+    <ThemeToggle />
       {!isHome && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />

@@ -12,11 +12,11 @@
     max-width: 350px;
     height: auto;
     border-radius: 0%;
-    border: 3px solid #ddd;
+    border: 3px solid var(--text-body);
 }
 
 .hero h1{
-    border: #ccc;
+    border: var(--text-body);
     appearance: none;
     padding: 10px;
 }
@@ -24,7 +24,7 @@
 .footer {
     margin-top: 3rem;
     padding: 2rem 1rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--text-body);
     text-align: center;
 }
 
@@ -41,15 +41,15 @@
 
 .footer-text {
     font-size: 0.85rem;
-    color: #777;
+    color: var(--text-muted);
 }
 
 .footer-link svg {
-    color: #fff;
+    color: var(--text-strong);
 }
 
 .footer-link:hover svg {
-    color: #fff;
+    color: var(--text-strong);
 }
 
 /* Contact Page*/
@@ -145,7 +145,7 @@
 .about p {
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #ccc;
+  color: var(--text-body);
 }
 
 
@@ -154,7 +154,7 @@
 }
 
 .about strong {
-  color: #fff;
+  color: var(--text-strong);
 }
 
 .about-content {
@@ -169,8 +169,8 @@
     text-align: center;
     margin-top: 2.5rem;
     padding-top: 1.5rem;
-    border-top: 1px solid #2e303a;
-    color: #888;
+    border-top: 1px solid var(--line);
+    color: var(--text-muted);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     font-size: 1.0rem;
@@ -185,7 +185,7 @@
 .skill-group h2 {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
-  color: #fff;
+  color: var(--text-strong);
 }
 
 .skill-list {
@@ -197,9 +197,9 @@
 }
 
 .skill-list li {
-  background: #1e1e2e;
-  border: 1px solid #333;
-  color: #ddd;
+  background: var(--card);
+  border: 1px solid var(--line);
+  color: var(--text-body);
   border-radius: 999px;
   padding: 0.35rem 1rem;
   font-size: 0.9rem;
@@ -208,7 +208,7 @@
 
 .skill-list li:hover {
   border-color: #8b5cf6;
-  color: #fff;
+  color: var(--text-strong);
 }
 
 .welcome {
@@ -235,7 +235,7 @@
 .welcome-line {
     font-size: 1.5rem;
     line-height: 1.5;
-    color: #fff;
+    color: var(--text-strong);
     margin-bottom: 0.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
@@ -244,7 +244,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic;
     margin-bottom: 0;
-    color: #888;
+    color: var(--text-muted);
     font-size: 0.95rem;
 }
 
@@ -258,10 +258,10 @@
 }
 
 .welcome-links a {
-  color: #c4c7cf;
+  color: var(--text-body);
   text-decoration: none;
   padding-bottom: 2px;
-  border-bottom: 1px solid #2e303a;
+  border-bottom: 1px solid var(--line);
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
@@ -273,7 +273,7 @@
 .welcome-attribution {
     font-style: italic;
     margin-bottom: 2.5rem;
-    color: #888;
+    color: var(--text-muted);
     font-size: 0.95rem;
 }
 
@@ -296,12 +296,12 @@
   display: block;
   padding: 0.15rem 0;
   font-size: 0.95rem;
-  color: #ccc;
+  color: var(--text-body);
 }
 
 .welcome .currently-label {
   margin-right: 0.4rem;
-  color: #888;
+  color: var(--text-muted);
 }
 
 .page.about {
@@ -342,7 +342,7 @@
   margin-top: 0.6rem;
   font-size: 0.85rem;
   font-style: italic;
-  color: #888;
+  color: var(--text-muted);
   text-align: center;
 }
 
@@ -350,7 +350,7 @@
 .currently {
   margin: 0;
   padding-top: 1.25rem;
-  border-top: 1px solid #2e303a;
+  border-top: 1px solid var(--line);
   text-align: left;
 }
 
@@ -374,11 +374,11 @@
   gap: 0.5rem;
   padding: 0.35rem 0;
   font-size: 0.9rem;
-  color: #ccc;
+  color: var(--text-body);
 }
 
 .currently-label {
-  color: #888;
+  color: var(--text-muted);
 }
 
 /* Bio text */
@@ -391,7 +391,7 @@
   font-size: 1.05rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
-  color: #c4c7cf;
+  color: var(--text-body);
 }
 
 .about-text a {
@@ -442,7 +442,7 @@
 
 .track {
   padding: 1rem 1.25rem;
-  border: 1px solid #2e303a;
+  border: 1px solid var(--line);
   border-radius: 14px;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
@@ -454,21 +454,21 @@
 
 .track-title {
   margin: 0;
-  color: #fff;
+  color: var(--text-strong);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.05rem;
 }
 
 .track-artist {
   margin: 0.15rem 0 0.6rem;
-  color: #888;
+  color: var(--text-muted);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 0.9rem;
 }
 
 .track-note {
   margin: 0;
-  color: #c4c7cf;
+  color: var(--text-body);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 0.9rem;
   font-style: italic;
@@ -506,7 +506,7 @@
 }
 
 .persona-intro {
-  color: #888;
+  color: var(--text-muted);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: italic;
 }
@@ -539,7 +539,7 @@
 .post {
   display: block;
   padding: 1.1rem 1.25rem;
-  border: 1px solid #2e303a;
+  border: 1px solid var(--line);
   border-radius: 14px;
   text-decoration: none;
   transition: border-color 0.15s ease, transform 0.15s ease;
@@ -552,14 +552,14 @@
 
 .post-title {
   display: block;
-  color: #fff;
+  color: var(--text-strong);
   font-size: 1.1rem;
 }
 
 .post-teaser {
   display: block;
   margin: 0.35rem 0 0.75rem;
-  color: #c4c7cf;
+  color: var(--text-body);
   font-size: 0.95rem;
   font-style: italic;
   line-height: 1.5;
@@ -576,7 +576,7 @@
 }
 
 .projects-intro {
-  color: #888;
+  color: var(--text-muted);
   font-style: italic;
   margin-bottom: 1.5rem;
 }
@@ -591,10 +591,10 @@
 
 .filter-btn {
   padding: 0.35rem 1rem;
-  border: 1px solid #2e303a;
+  border: 1px solid var(--line);
   border-radius: 999px;
   background: none;
-  color: #c4c7cf;
+  color: var(--text-body);
   font: inherit;
   font-size: 0.9rem;
   cursor: pointer;
@@ -608,5 +608,28 @@
 .filter-btn.active {
   background: #8b5cf6;
   border-color: #8b5cf6;
-  color: #fff;
+  color: var(--text-strong);
+}
+
+#root {
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.25rem;
+  z-index: 20;
+  display: inline-flex;
+  padding: 0.4rem;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: inherit;
+  cursor: pointer;
+  transition: border-color 0.15s ease, opacity 0.15s ease;
+}
+
+.theme-toggle:hover {
+  border-color: #8b5cf6;
 }
