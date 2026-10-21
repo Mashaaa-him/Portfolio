@@ -633,3 +633,8 @@
 .theme-toggle:hover {
   border-color: #8b5cf6;
 }
+
+.load-note {
+  color: var(--text-muted, #888);
+  font-style: italic;
+}

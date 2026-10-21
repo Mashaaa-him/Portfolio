@@ -28,7 +28,7 @@ function Projects() {
       : projects.filter((p) => p.tech.includes(selected))
 
     if (status === 'loading') return <p className="page">Loading projects...</p>
-    if (status === 'error') return <p className="page">Couldn't load projects. Try again in a bit. You can listen to music in the meantime in <a href=""></a></p>
+    if (status === 'error') return <p className="page">Couldn't load projects. Try again in a bit.</p>
 
     return (
         <section className="page projects">
