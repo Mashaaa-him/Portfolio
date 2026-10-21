@@ -23,6 +23,9 @@ app.get('/api/health', (req, res) => {
     res.json({ status: 'ok' })
 })
 
+app.get('/favicon.ico', (req, res) => res.status(204).end())
+app.get('/.well-known/*',(req, res) => res.status(204).end())
+
 app.listen(PORT, () => {
     console.log(`API running on http://localhost:${PORT}`)
 })
