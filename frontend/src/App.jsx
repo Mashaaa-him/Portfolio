@@ -7,6 +7,7 @@ import About from './pages/About'
 import Persona from './pages/Persona'
 import Projects from './pages/Projects'
 import ThemeToggle from './components/ThemeToggle'
+import Guestbook from './pages/Guestbook'
 
 function AppContent() {
   const location = useLocation()
@@ -22,6 +23,7 @@ function AppContent() {
         <Route path='/skills' element={<SkillsPage />} />
         <Route path='/persona' element={<Persona />}/>
         <Route path='/projects' element={<Projects />} />
+        <Route path='/guestbook' element={<Guestbook />} />
       </Routes>
       <Footer />
     </>

@@ -23,6 +23,7 @@ function Navbar() {
                 <NavLink to='/skills' onClick={close}>Skills</NavLink>
                 <NavLink to='/persona' onClick={close}>Persona</NavLink>
                 <NavLink to="/projects" onClick={close}>Projects</NavLink>
+                <NavLink to='/guestbook' onClick={close}>Guestbook</NavLink>
             </div>
         </nav>
     )

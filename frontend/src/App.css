@@ -638,3 +638,96 @@
   color: var(--text-muted, #888);
   font-style: italic;
 }
+
+.guestbook-intro {
+  color: #888;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.guestbook-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: left;
+  max-width: 520px;
+  margin: 0 auto 2.5rem;
+}
+
+.guestbook-form label {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #2e303a;
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.guestbook-form input:focus,
+.guestbook-form textarea:focus {
+  outline: none;
+  border-color: #8b5cf6;
+}
+
+.char-count {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #888;
+  text-align: right;
+}
+
+.field-error {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #f87171;
+}
+
+.gb-submit {
+  margin-top: 0.75rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 999px;
+  background: #8b5cf6;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.gb-submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.gb-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 520px;
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+}
+
+.gb-entry {
+  padding: 1rem 1.25rem;
+  border: 1px solid #2e303a;
+  border-radius: 14px;
+}
+
+.gb-message {
+  margin: 0 0 0.5rem;
+  white-space: pre-wrap;
+}
+
+.gb-meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
+}
