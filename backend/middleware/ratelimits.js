@@ -17,3 +17,11 @@ export const guestbookPostLimiter = rateLimit({
   legacyHeaders: false,
   message: { error: "You've posted a lot lately. Try again in a bit." },
 })
+
+export const adminLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  limit: 10,
+  standardHeaders: 'draft-7',
+  legacyHeaders: false,
+  message: { error: 'Too many attempts. Try again later.'},
+})

@@ -1,7 +1,9 @@
 import { Router } from 'express'
 import { readFile, writeFile } from 'node:fs/promises'
 import { randomUUID } from 'node:crypto'
-import { guestbookPostLimiter } from '../middleware/ratelimits.js'
+import { guestbookPostLimiter, adminLimiter } from '../middleware/ratelimits.js'
+import { requireAdmin } from '../middleware/requireAdmin.js'
+import { error } from 'node:console'
 
 const router = Router()
 const FILE = new URL('../data/guestbook.json', import.meta.url)
@@ -56,6 +58,22 @@ router.post('/', guestbookPostLimiter, async (req, res, next) => {
     console.log('4: file written') // DEBUG
 
     res.status(201).json(entry)
+  } catch (err) {
+    next(err)
+  }
+})
+
+router.delete('/:id', adminLimiter, requireAdmin, async (req, res, next) => {
+  try {
+    const entries = await readEntries()
+    const remaining = entries.filter((e) => e.id !== req.params.id)
+
+    if (remaining.length === entries.length) {
+      return res.status(404).json({ error: 'Entry not found.'})
+    }
+
+    await writeFile(FILE, JSON.stringify(remaining, null, 2))
+    res.status(204).end()
   } catch (err) {
     next(err)
   }
