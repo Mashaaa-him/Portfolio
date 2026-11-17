@@ -16,6 +16,7 @@ function Guestbook() {
         setSending(true)
         setErrors({})
         setFormError('')
+        
 
         try {
             const res = await fetch('/api/guestbook', {
@@ -27,6 +28,10 @@ function Guestbook() {
 
             if (res.status === 400) {
                 setErrors(body.errors || {})
+                return
+            }
+            if (res.status === 429) {
+                setFormError(body.error || 'Slow down a little and try again later.')
                 return
             }
             if (!res.ok) throw new Error('Request failed')
